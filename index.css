@@ -1,0 +1,155 @@
+
+
+
+
+body{
+height: 100vh;
+    display:flex;
+justify-content: center;
+align-items: center;
+background-color: hsl(47, 88%, 63%);
+
+    }
+
+
+
+
+
+.one {
+width: 90%;           /* takes 90% of screen width */
+    max-width: 400px;     /* stops growing too big on desktop */
+    height: auto;    /* stops growing too big on desktop */
+border:1px solid black;
+border-radius: 20px;
+background-color: white;
+
+display:flex;
+flex-direction: column;
+align-items: center;
+box-shadow: 8px 8px 0 black; /* offset, no blur */
+transition: transform 0.3s ease;
+
+}
+
+.il{ width: 100%;         /* fills card width */
+    max-width: 335px;    /* optional limit */
+    height: auto;        /* maintain aspect ratio */
+    margin: 25px auto 0;
+
+
+    border: none;
+
+
+    border-radius: 20px;
+   display: block;   
+}
+
+
+
+.two{  width: 90%;           /* relative to card width */
+    max-width: 335px;
+    display:flex;
+    align-items: flex-start;
+flex-direction: column;
+
+
+}
+
+
+
+button{
+
+  margin-top: 25px;;
+  width: 50%;           /* scales with card */
+    max-width: 100px;
+ padding: 10px 20px;
+    background-color: hsl(47, 88%, 63%);
+    border:none;
+    border-radius: 5px;
+    font-family: "Figtree", sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+}
+ h5{
+
+      font-family: "Figtree", sans-serif;
+    font-weight: 500;
+ }
+
+ 
+h1 {  font-family: "Figtree", sans-serif;
+    font-weight: 800;
+     font-size: 28px;
+ }
+
+ 
+
+p{
+font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    color:hsl(0, 0%, 42%);
+    font-size: 16px;
+
+}
+
+.icon{
+
+    width:40px;
+    height:40px;
+}
+
+.four{
+ width: 90%;           /* relative to card width */
+    max-width: 335px;
+ display: flex;
+ flex-direction: row;
+ gap:20px;
+ align-items: center;
+
+
+
+}
+
+
+h3{
+
+    font-family: "Figtree", sans-serif;
+    font-weight: 800;
+}
+
+
+
+@media (max-width: 1440px) { }
+
+@media (min-width: 768px) {
+    .one {
+        width: 400px;     /* fixed size for tablet/desktop */
+        height: 600px;
+    }
+
+    .il {
+        width: 335px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .il {
+        max-width: 90%;      /* smaller cards on tiny screens */
+        margin-top: 15px;    /* slightly smaller top margin */
+    }
+}
+
+
+
+.one:active h1{
+
+color:hsl(47, 88%, 63%);
+
+}
+
+.one:hover{
+    transform: scale(1.1);
+    
+}
+
